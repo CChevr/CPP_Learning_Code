@@ -1,4 +1,4 @@
-#pragma once
+#pragma once // Permet de ne recopier qu'une seule fois ce header
 #include <ostream>
 
 class Rectangle

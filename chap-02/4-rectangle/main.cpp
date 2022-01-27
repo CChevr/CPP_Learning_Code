@@ -19,6 +19,8 @@ int main()
     Rectangle s1;
     Rectangle s2;
 
+    std::cout << s1 << std::endl;
+    std::cout << s2 << std::endl;
     /* some instruction saying that next squares's size will now be 5.f */
     Rectangle::set_default_size(5.f);
 
