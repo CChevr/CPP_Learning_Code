@@ -1,6 +1,19 @@
-add_executable(tp2-reminders
-    Reminders.cpp
-    Event.h
-    Parsing.cpp
-    Parsing.h
+add_executable(tp2-histogram
+    ex2.cpp
+    Histogram.h
+    Histogram.cpp
+)
+
+add_executable(tp2-clock
+    reminder/ex3.cpp
+    reminder/Event.h
+    reminder/Event.cpp
+    reminder/MinuteHand.h
+    reminder/MinuteHand.cpp
+    reminder/SecondHand.h
+    reminder/SecondHand.cpp
+    reminder/Clock.h
+    reminder/Clock.cpp
+    reminder/Parsing.h
+    reminder/Parsing.cpp
 )
