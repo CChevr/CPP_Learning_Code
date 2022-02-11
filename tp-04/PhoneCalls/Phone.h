@@ -8,6 +8,7 @@ public:
     Phone(const Person& owner)
         : _owner { owner }
     {}
+    virtual ~Phone() {}
 
     virtual void ring() const { _owner.answer_phone(); }
 
