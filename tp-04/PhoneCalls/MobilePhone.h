@@ -9,5 +9,7 @@ public:
         : Phone(owner)
     {}
 
+    void ring() const override { _owner.answer_phone(); }
+
 private:
 };

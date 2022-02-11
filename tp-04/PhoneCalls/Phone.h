@@ -12,7 +12,7 @@ protected:
 public:
     virtual ~Phone() {}
 
-    virtual void ring() const { _owner.answer_phone(); }
+    virtual void ring() const = 0;
 
 protected:
     const Person& _owner;

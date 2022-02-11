@@ -39,11 +39,17 @@ int main()
     */
 
     // Q8
+    /*
     Person    paul { "Paul", 3 };
     HomePhone far_phone { paul, -10 };
 
     const Phone normal_phone = far_phone;
     normal_phone.ring();
+    */
+
+    Person      paul { "Paul", 3 };
+    MobilePhone mobile_phone { paul };
+    mobile_phone.ring();
 
     return 0;
 }

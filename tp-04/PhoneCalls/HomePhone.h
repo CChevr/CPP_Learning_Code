@@ -14,7 +14,7 @@ public:
     {
         if (_owner.get_position() == _position)
         {
-            Phone::ring();
+            _owner.answer_phone();
         }
         else
         {
