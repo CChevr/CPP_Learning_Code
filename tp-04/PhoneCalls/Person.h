@@ -6,13 +6,13 @@
 
 class Person
 {
-protected:
+
+public:
     Person(std::string_view name, int position)
         : _name { name }
         , _position { position }
     {}
 
-public:
     void answer_phone() const { std::cout << "Hi! " << _name << " on the phone!" << std::endl; }
 
     int get_position() const { return _position; }
