@@ -1,7 +1,9 @@
 #pragma once
 #include "point.hpp"
 
-using PointContainer = /*???*/;
+#include <list>
+
+using PointContainer = std::list<Point>;
 
 // forward-declare the Line class in order to use it for intersection
 class Line;

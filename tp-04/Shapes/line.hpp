@@ -46,5 +46,7 @@ public:
         return {};
     }
 
+    PointContainer intersect(const Shape& other) const override { return other.intersect(*this); }
+
     ~Line() = default;
 };

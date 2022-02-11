@@ -19,9 +19,11 @@ void intersect_all(const std::vector<Shape*>& shapes)
 {
     for (auto iter = shapes.begin(); iter != shapes.end(); ++iter)
     {
+        const Shape& shape1 = **iter;
         for (auto iter2 = std::next(iter); iter2 != shapes.end(); ++iter2)
         {
-            std::cout << **iter << " intersects " << **iter2 << " in:\t" << (*iter)->intersect(**iter2)
+            const Shape& shape2 = **iter2;
+            std::cout << shape1 << " intersects " << shape2 << " in:\t" << shape1.intersect(shape2)
                       << std::endl;
         }
     }

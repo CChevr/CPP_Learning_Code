@@ -61,5 +61,10 @@ public:
         return result;
     }
 
+    PointContainer intersect(const Line& ln) const override
+    {
+        return intersect(static_cast<const Shape&>(ln));
+    }
+
     ~Rectangle() = default;
 };
