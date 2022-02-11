@@ -22,6 +22,11 @@ public:
             std::swap(lower_left.y, upper_right.y);
     }
 
+    std::ostream& print(std::ostream& os) const override
+    {
+        return os << "rectangle " << lower_left << "--" << upper_right;
+    }
+
     bool point_is_inside(const Point& p) const
     {
         return (p.x >= lower_left.x) && (p.x <= upper_right.x) && (p.y >= lower_left.y) &&

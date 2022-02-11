@@ -18,6 +18,11 @@ public:
         , radius { _radius }
     {}
 
+    std::ostream& print(std::ostream& os) const override
+    {
+        return os << "circle " << center << " radius " << radius;
+    }
+
     // intersection of 2 circles is the intersection of one cicle with the line L "in the middle" such that
     // L intersects the line between the centers of the circles at distances d1 from circle 1 and d2 from
     // circle 2 where r1^2 - d1^2  = r2^2 - d2^2 using d1 + d2 = distance dc between the centers, we get: d1^2

@@ -16,6 +16,11 @@ public:
         , last { _last }
     {}
 
+    virtual std::ostream& print(std::ostream& os) const override
+    {
+        return os << "line through " << first << " & " << last;
+    }
+
     Point direction() const { return last - first; }
 
     // intersecting a line with a line is simple: just solve (for scalars a & b) the equation system:
